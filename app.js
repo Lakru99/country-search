@@ -27,9 +27,10 @@ function serchCuntrie(){
     let region = document.getElementById("region")
     let capital = document.getElementById("capital")
     let img =  document.getElementById("img")
-    
+    document.getElementById( 'result' ).style.display = 'block';
 
     console.log(searchValue);
+
 
 
     fetch(`https://restcountries.com/v3.1/name/${searchValue}`)
